@@ -1,0 +1,45 @@
+CREATE TABLE IF NOT EXISTS albums (
+    id INTEGER PRIMARY KEY,
+    title TEXT NOT NULL,
+    year INTEGER NOT NULL,
+    cover TEXT NOT NULL,
+    spotify TEXT NOT NULL
+);
+
+INSERT INTO albums (id, title, year, cover, spotify) VALUES
+(1, 'Fleetwood Mac (1968)', 1968, 'images/fleetwood-mac-1968.jpg', 'https://open.spotify.com/embed/album/45i41n53udGyswkJ9uR8pB'),
+(2, 'Mr. Wonderful', 1968, 'images/mr-wonderful.jpg', 'https://open.spotify.com/embed/album/2yBjm0Jb8d8Oaor7F6ivyN'),
+(3, 'Then Play On', 1969, 'images/then-play-on.jpg', 'https://open.spotify.com/embed/album/4Ji83LjzvEzFoCpN85m5lW'),
+(4, 'Kiln House', 1970, 'images/kiln-house.jpg', 'https://open.spotify.com/embed/album/2fNVSqSja0AqhKd5dq2xKy'),
+(5, 'Future Games', 1971, 'images/future-games.jpg', 'https://open.spotify.com/embed/album/0mrtsupVI772qJdmW17yP0'),
+(6, 'Bare Trees', 1972, 'images/bare-trees.jpg', 'https://open.spotify.com/embed/album/4yjFzAgg5VcidLwoZiQmbi'),
+(7, 'Penguin', 1973, 'images/penguin.jpg', 'https://open.spotify.com/embed/album/7f2wzh1hY4adWEoTKIEX6W'),
+(8, 'Mystery to Me', 1973, 'images/mystery-to-me.jpg', 'https://open.spotify.com/embed/album/7MprjyJe4SD8Sq9Nn7oYD5'),
+(9, 'Heroes Are Hard to Find', 1974, 'images/heroes-are-hard-to-find.jpg', 'https://open.spotify.com/embed/album/2ISNpwmh12Nf2420YUQcNE'),
+(10, 'Fleetwood Mac', 1975, 'images/fleetwood-mac.png', 'https://open.spotify.com/embed/album/6jTUmLtY779ZNYsyugOq2q'),
+(11, 'Fleetwood Mac (Deluxe Edition)', 1975, 'images/deluxe.jpg', 'https://open.spotify.com/embed/album/0OQxaj2MqTb9nEtoTPfN4P'),
+(12, 'LA Forum 1977 2nd Night - 30th August 1977 (Live from LA Forum)', 1977, 'images/la-forum-1977.jpg', 'https://open.spotify.com/embed/album/0oJQcAbv9wKGC9P0OyRMN2'),
+(13, 'Rumours', 1977, 'images/rumours.jpg', 'https://open.spotify.com/embed/album/1bt6q2SruMsBtcerNVtpZB'),
+(14, 'Rumours (Super Deluxe Edition)', 1977, 'images/rumours-super-deluxe.jpg', 'https://open.spotify.com/embed/album/0BwWUstDMUbgq2NYONRqlu'),
+(15, 'Tusk', 1979, 'images/tusk.png', 'https://open.spotify.com/embed/album/5FIN8pyPVx8ggNs5jQ86Re'),
+(16, 'Tusk (Deluxe Edition)', 1979, 'images/tusk-deluxe.jpg', 'https://open.spotify.com/embed/album/1d075yQcykHjerQ2BN0ABn'),
+(17, 'Live (Deluxe Edition)', 1980, 'images/live-deluxe.jpg', 'https://open.spotify.com/embed/album/4gY6KDbChOnXCp1K4p4z0M'),
+(18, 'Live', 1980, 'images/live.jpg', 'https://open.spotify.com/embed/album/14oeuE9HHmvB07pfQ3Fu7N'),
+(19, 'Mirage', 1982, 'images/mirage.jpg', 'https://open.spotify.com/embed/album/2962eYkQa0R7EnIGZqeARS'),
+(20, 'Mirage (Deluxe Edition)', 1982, 'images/mirage-deluxe.jpg', 'https://open.spotify.com/embed/album/1dZNgJ3Gh3wp6ohzk29JUG'),
+(21, 'Tango in the Night (Deluxe Edition)', 1987, 'images/tango-in-the-night-deluxe.jpg', 'https://open.spotify.com/embed/album/4AsXQ17Arq1cUVoa9dKJ3F'),
+(22, 'Tango in the Night', 1987, 'images/tango-in-the-night.jpg', 'https://open.spotify.com/embed/album/7CWZNdANL2ZYQs3JfdxoM5'),
+(23, 'Behind the Mask', 1990, 'images/behind-the-mask.jpg', 'https://open.spotify.com/embed/album/3aXrkfZW8FzUDOU0RwQ401'),
+(24, 'Time', 1995, 'images/time.jpg', 'https://open.spotify.com/embed/album/2efkPPuJQ7JrTloWk4lhiV'),
+(25, 'The Dance', 1997, 'images/the-dance.jpg', 'https://open.spotify.com/embed/album/70MrKoi2AdCFBxKqeXDPHZ'),
+(26, 'Shrine ''69', 2000, 'images/shrine-69.jpg', 'https://open.spotify.com/embed/album/6YEnWIpSS19x0lKzJPi9Ej'),
+(27, 'Say You Will', 2003, 'images/say-you-will.png', 'https://open.spotify.com/embed/album/6dMdadS6Ng71pD9As93ufx'),
+(28, 'Live in Boston', 2004, 'images/live-in-boston.jpg', 'https://open.spotify.com/embed/album/4HPtoDoK5jdMDCGeAhBwse'),
+(29, 'Transmission Impossible', 2020, 'images/transmission-impossible.jpg', 'https://open.spotify.com/embed/album/4Ktz8mPkDmGBQ1nRWNulV9'),
+(30, 'The Shape I''m In (Live 1972)', 2023, 'images/the-shape-im-in-live.jpg', 'https://open.spotify.com/embed/album/5VhfYc43iaJTJfOjtLCh72'),
+(31, 'Rumours Live', 2023, 'images/rumours-live.jpg', 'https://open.spotify.com/embed/album/24kD7cQnCojzadtNNlplxj'),
+(32, 'Mirage Tour ''82 (Live)', 2024, 'images/mirage-tour.jpg', 'https://open.spotify.com/embed/album/62BXtgi628S51UANvOPTxi'),
+(33, 'Live from the Record Plant (December 15, 1974)', 2025, 'images/live-from-record-plant.webp', 'https://open.spotify.com/embed/album/62Lz2uyWq4KiRAJE8Xwm42'),
+(34, 'Fleetwood Mac: Live 1975', 2025, 'images/live-1975.jpg', 'https://open.spotify.com/embed/album/6mGPF9cLunUmTjF3Xdwlj8');
+
+SELECT * FROM albums;

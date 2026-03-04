@@ -1,0 +1,615 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+  font-family: "Noto Serif", serif;
+  color: #111;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+
+    background: #ffffff;
+    z-index: 1000;
+}
+
+
+body.home header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+}
+
+body:not(.home) {
+    background: linear-gradient(to bottom, #ffffff, #f3f3f3);
+}
+
+header nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #111;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+header nav a:hover {
+  opacity: 1;
+}
+
+main {
+    padding: 2rem;
+}
+
+.logo {
+   margin: 0;
+}
+
+.logo img{
+    height: 80px;
+    width: auto;
+    display: block;
+}
+
+.cover {
+    height: 600px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.band {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.band-text {
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.about-title {
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.about-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease;
+}
+
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+
+.member {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 60px;
+    align-items: start;
+    margin: 100px auto;
+    max-width: 1100px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.member h3 {
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.member:nth-child(even) {
+    grid-template-columns: 1fr 350px;
+}
+
+.member:nth-child(even) .about-photo {
+    order: 2;
+}
+
+.member:last-child {
+    border-bottom: none;
+}
+
+.member-media {
+    text-align: center;
+}
+
+.member-role {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.band-section {
+    max-width: 1000px;
+    margin: 0 auto 120px auto;
+}
+
+.band-hero {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+
+.albums-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.album-container {
+    position: relative;
+    display: inline-block;
+}
+.albums-cover {
+    height: 200px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+}
+.albums-titles {
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.album-button {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+}
+
+.album-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.8)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.album-button:hover .album-overlay {
+    opacity: 1;
+}
+
+.album-button:hover .albums-cover {
+    transform: scale(1.05);
+}
+
+body.home{
+    margin: 0;
+    background-color: #7c7c7c;
+    color: #e6e6e6;
+    font-family: "Noto Serif", serif;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.95)
+    ),
+    url("../images/cover.webp");
+
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 4rem;
+}
+
+.hero-content h2 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  margin-top: 0.75rem;
+  max-width: 500px;
+  font-size: 1.1rem;
+  opacity: 0.75;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.35),
+    rgba(0,0,0,0.15),
+    rgba(0,0,0,0.5)
+  );
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+
+.album-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.album-cover {
+  width: 400px;
+  max-width: 80%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.album-title {
+  margin-top: 2rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.album-player {
+  margin-top: 3rem;
+}
+
+.album-player iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 380px;
+  border-radius: 12px;
+  border: none;
+}
+
+.album-hero {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.live-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.live-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.live-description {
+  opacity: 0.6;
+  margin: 0 auto 40px auto;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.video-card iframe:hover {
+  transform: scale(1.02);
+}
+
+.video-card h3 {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.albums-controls {
+  text-align: right;
+  margin-bottom: 3rem;
+  padding-right: 15px;
+}
+
+.sort-label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  opacity: 0.6;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding: 0.8rem 2.5rem 0.8rem 1.2rem;
+  font-family: "Noto Serif", serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 30px;
+  background-color: white;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.custom-select::after {
+  content: "▾";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.custom-select select:hover {
+  border-color: #111;
+}
+
+.custom-select select:focus {
+  outline: none;
+  border-color: #c5a46d;
+  box-shadow: 0 0 0 3px rgba(197,164,109,0.15);
+}
+
+.site-footer {
+  margin-top: 100px;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #111;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    background: white;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 0;
+    z-index: 999;
+  }
+
+  .nav-menu a {
+    margin: 0.75rem 0;
+    font-size: 0.9rem;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  body.home .menu-toggle {
+    color: #e6e6e6;
+  }
+
+  body.home .nav-menu {
+    background: rgba(20, 20, 20, 0.95);
+  }
+
+  body.home .nav-menu a {
+    color: #e6e6e6;
+  }
+
+  .album-cover {
+    width: 220px;
+  }
+
+  .album-player iframe {
+    height: 320px;
+  }
+
+  .albums-list {
+    gap: 20px;
+  }
+
+  .album-page {
+    padding: 3rem 1.5rem;
+  }
+
+  .album-title {
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  .hero {
+    background-image: url("../images/cover-2.avif");
+    background-position: center top;
+    min-height: 85vh;
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.2),
+      rgba(0,0,0,0.6)
+    );
+  }
+  
+  .hero-content h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin: 60px auto;
+        padding-bottom: 60px;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+    }
+
+    .member:last-child {
+        border-bottom: none;
+    }
+
+    .member .about-photo {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .member-role {
+        margin-top: 10px;
+    }
+
+    .about-text {
+        max-width: 100%;
+        text-align: center;
+        padding: 0 1.5rem;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .band-hero {
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 30px;
+        border-radius: 12px;
+    }
+
+    .band-section {
+        margin: 0 1.5rem 80px 1.5rem;
+    }
+
+    .band-text {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: clamp(1.8rem, 6vw, 2.4rem);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

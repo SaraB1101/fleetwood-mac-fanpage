@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="index.html">
+            <img src="images/fleetwood_mac-logo_brandlogos.net_vuzg3.png" alt="Fleetwood Mac Logo">
+            </a>
+        </h1>
+
+        <button class="menu-toggle" aria-label="Open menu">
+            ☰
+        </button>
+
+        <nav class="nav-menu">
+            <a href="about.html">About</a>
+            <a href="albums.html">Albums</a>
+            <a href="live.html">Live</a>
+        </nav>
+    </header>
+
+    <main class="album-page">
+        <section class="album-hero">
+            <img src="images/rumours.jpg" alt="Rumours album cover" class="album-cover">
+            <h1 class="album-title">Rumours</h1>
+        </section>
+
+        <section class="album-player">
+            <iframe
+                src="https://open.spotify.com/embed/album/1bt6q2SruMsBtcerNVtpZB"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+<footer class="site-footer">
+  <p>
+    This website is a portfolio project and is not affiliated with Fleetwood Mac.
+    Band information sourced from Wikipedia. 
+    Album artwork, Spotify embeds and YouTube videos remain property of their respective owners.
+  </p>
+</footer>
+</html>
